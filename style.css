@@ -1,0 +1,71 @@
+/* custom variables */
+:root {
+  --color: #daa520;
+  --paddingRange: 1rem;
+  --blurRange: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(/backgroundImage.jpg);
+  background-size: cover;
+  font-size: 10px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+.content {
+  width: 90%;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.js {
+  color: var(--color);
+}
+
+.input {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.image {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+img {
+  max-width: 100%;
+  padding: var(--paddingRange);
+  background: var(--color);
+  filter: blur(var(--blurRange));
+}
+
+@media (min-width:900px) {
+  h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .input {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
